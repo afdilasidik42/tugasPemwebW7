@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NopirCorp - Company Profile</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .navbar {
+      background-color: #0d6efd;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0d6efd, #6ea8fe);
+      color: white;
+      padding: 120px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+    }
+
+    .section-title {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #0d6efd;
+    }
+
+    .team-member img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s;
+    }
+
+    footer {
+      background: #0d6efd;
+      color: white;
+      text-align: center;
+      padding: 1.2rem 0;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Nopir<span class="text-warning">Corp</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+      <h1 class="mb-3">Selamat Datang di <span class="text-warning">NopirCorp</span></h1>
+      <p class="lead mb-4">Kami adalah perusahaan digital kreatif yang membantu bisnis tumbuh dengan solusi modern dan teknologi inovatif.</p>
+      <button class="btn btn-light btn-lg" onclick="showWelcome()">Pelajari Lebih Lanjut</button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Tentang Kami</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <p class="text-muted">
+            NopirCorp adalah perusahaan teknologi yang berfokus pada pengembangan solusi digital. 
+            Kami menyediakan layanan desain, pengembangan aplikasi, serta strategi digital untuk mempercepat transformasi bisnis Anda.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Layanan Kami</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100 text-center">
+            <div class="card-body">
+              <i class="bi bi-code-slash display-4 text-primary mb-3"></i>
+              <h5 class="card-title">Web Development</h5>
+              <p class="card-text text-muted">Kami membangun website profesional yang cepat, responsif, dan menarik.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100 text-center">
+            <div class="card-body">
+              <i class="bi bi-phone display-4 text-primary mb-3"></i>
+              <h5 class="card-title">Mobile App</h5>
+              <p class="card-text text-muted">Membuat aplikasi Android & iOS untuk pengalaman pengguna yang maksimal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100 text-center">
+            <div class="card-body">
+              <i class="bi bi-lightbulb display-4 text-primary mb-3"></i>
+              <h5 class="card-title">Digital Strategy</h5>
+              <p class="card-text text-muted">Membantu Anda merancang strategi digital untuk mengembangkan bisnis secara berkelanjutan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Tim Kami</h2>
+      <div class="row text-center g-4 justify-content-center">
+        <div class="col-md-3 col-6 team-member">
+          <img src="assets/novri.jpg" alt="CEO" class="shadow-sm">
+          <h6 class="mt-2 mb-0 fw-semibold">Novri Afdhillah Sidik</h6>
+          <small class="text-muted">CEO & Founder</small>
+        </div>
+        <div class="col-md-3 col-6 team-member">
+          <img src="assets/arfan.png" alt="COO" class="shadow-sm">
+          <h6 class="mt-2 mb-0 fw-semibold">Abdullah Arfan</h6>
+          <small class="text-muted">Divisi Acara</small>
+        </div>
+        <div class="col-md-3 col-6 team-member">
+          <img src="assets/abdul.jpg" alt="CTO" class="shadow-sm">
+          <h6 class="mt-2 mb-0 fw-semibold">Abdullah Arfan</h6>
+          <small class="text-muted">Donatur</small>
+        </div>
+        <div class="col-md-3 col-6 team-member">
+          <img src="assets/ibnu.jpg" alt="CTO" class="shadow-sm">
+          <h6 class="mt-2 mb-0 fw-semibold">Ibnu Nadzar</h6>
+          <small class="text-muted">Driver</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form id="contactForm" class="p-4 border rounded shadow-sm bg-white">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="name" placeholder="Masukkan nama kamu">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Masukkan email kamu">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Pesan</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Tulis pesan kamu..."></textarea>
+            </div>
+            <button type="button" class="btn btn-primary w-100" onclick="sendMessage()">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NopirCorp.</p>
+  </footer>
+
+  <!-- Pop-up Modal -->
+  <div class="modal fade" id="popupModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title w-100" id="popupTitle"></h5>
+        </div>
+        <div class="modal-body" id="popupMessage"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Tutup</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
